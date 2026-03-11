@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	shimjson "github.com/alloy-rest/-companies.social-sdk-go/internal/encoding/json"
+	shimjson "github.com/alloy-rest/companies.social-sdk-go/internal/encoding/json"
 
 	"github.com/tidwall/sjson"
 )

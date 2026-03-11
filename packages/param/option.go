@@ -3,7 +3,7 @@ package param
 import (
 	"encoding/json"
 	"fmt"
-	shimjson "github.com/alloy-rest/-companies.social-sdk-go/internal/encoding/json"
+	shimjson "github.com/alloy-rest/companies.social-sdk-go/internal/encoding/json"
 	"time"
 )
 

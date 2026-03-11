@@ -1,4 +1,4 @@
-module github.com/alloy-rest/-companies.social-sdk-go
+module github.com/alloy-rest/companies.social-sdk-go
 
 go 1.22
 

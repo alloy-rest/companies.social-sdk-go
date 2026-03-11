@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alloy-rest/-companies.social-sdk-go/internal"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apierror"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apiform"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apiquery"
+	"github.com/alloy-rest/companies.social-sdk-go/internal"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apierror"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apiform"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apiquery"
 )
 
 func getDefaultHeaders() map[string]string {
@@ -469,7 +469,7 @@ func (cfg *RequestConfig) Execute() (err error) {
 
 		// Close the response body before retrying to prevent connection leaks
 		if res != nil && res.Body != nil {
-			res.Body.Close()
+			_ = res.Body.Close()
 		}
 
 		select {
@@ -497,7 +497,7 @@ func (cfg *RequestConfig) Execute() (err error) {
 
 	if res.StatusCode >= 400 {
 		contents, err := io.ReadAll(res.Body)
-		res.Body.Close()
+		_ = res.Body.Close()
 		if err != nil {
 			return err
 		}
@@ -528,7 +528,7 @@ func (cfg *RequestConfig) Execute() (err error) {
 	}
 
 	contents, err := io.ReadAll(res.Body)
-	res.Body.Close()
+	_ = res.Body.Close()
 	if err != nil {
 		return fmt.Errorf("error reading response body: %w", err)
 	}

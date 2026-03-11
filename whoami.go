@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"slices"
 
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apijson"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/requestconfig"
-	"github.com/alloy-rest/-companies.social-sdk-go/option"
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/respjson"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apijson"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/requestconfig"
+	"github.com/alloy-rest/companies.social-sdk-go/option"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/respjson"
 )
 
 // WhoamiService contains methods and other services that help with interacting
@@ -36,7 +36,7 @@ func (r *WhoamiService) Get(ctx context.Context, opts ...option.RequestOption) (
 	opts = slices.Concat(r.Options, opts)
 	path := "whoami"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 type WhoamiGetResponse struct {

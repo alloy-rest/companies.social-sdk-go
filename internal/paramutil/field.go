@@ -1,8 +1,8 @@
 package paramutil
 
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/param"
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/respjson"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/param"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/respjson"
 )
 
 func AddrIfPresent[T comparable](v param.Opt[T]) *T {

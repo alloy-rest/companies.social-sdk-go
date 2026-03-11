@@ -1,7 +1,7 @@
 package companiessocial
 
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/param"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/param"
 	"io"
 	"time"
 )

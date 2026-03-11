@@ -2,8 +2,8 @@ package apijson_test
 
 import (
 	"encoding/json"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apijson"
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/respjson"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apijson"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/respjson"
 	"testing"
 )
 

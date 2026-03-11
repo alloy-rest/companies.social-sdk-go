@@ -3,7 +3,7 @@
 package constant
 
 import (
-	shimjson "github.com/alloy-rest/-companies.social-sdk-go/internal/encoding/json"
+	shimjson "github.com/alloy-rest/companies.social-sdk-go/internal/encoding/json"
 )
 
 type Constant[T any] interface {

@@ -3,8 +3,8 @@
 package companiessocial
 
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apierror"
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/param"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apierror"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/param"
 )
 
 // aliased to make [param.APIUnion] private when embedding

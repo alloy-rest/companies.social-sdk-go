@@ -3,8 +3,8 @@ package respjson_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apijson"
-	rj "github.com/alloy-rest/-companies.social-sdk-go/packages/respjson"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apijson"
+	rj "github.com/alloy-rest/companies.social-sdk-go/packages/respjson"
 	"reflect"
 	"testing"
 )

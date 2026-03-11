@@ -1,4 +1,4 @@
 configured_endpoints: 3
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/companies-social%2Fcompanies.social-2b968c6da448c812351a113114189c281cb1af59465a86f22e11aaf5e77fcc0f.yml
-openapi_spec_hash: 6eb8992629f47ae2758c33ead521b897
-config_hash: c65b213bdbad26fcb60c89fb456b55ee
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/companies-social%2Fcompanies.social-8f3cb6de2b63605d1bd7d66aeae087dff30ba2c729457c1506b98b50ce3a8816.yml
+openapi_spec_hash: deed863eaa67d0116c64c133c67de7f6
+config_hash: 4852fb103bd543cc5c103cdea268a8f7

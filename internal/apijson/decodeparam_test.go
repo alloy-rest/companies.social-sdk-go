@@ -3,8 +3,8 @@ package apijson_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/apijson"
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/param"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/apijson"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/param"
 	"reflect"
 	"testing"
 )

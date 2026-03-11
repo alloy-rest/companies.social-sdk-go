@@ -1,8 +1,8 @@
 package sentinel_test
 
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/encoding/json/sentinel"
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/param"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/encoding/json/sentinel"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/param"
 	"reflect"
 	"slices"
 	"testing"

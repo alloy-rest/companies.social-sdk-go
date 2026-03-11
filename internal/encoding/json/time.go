@@ -2,7 +2,7 @@
 package json
 
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/encoding/json/shims"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/encoding/json/shims"
 	"reflect"
 	"time"
 )

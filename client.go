@@ -11,8 +11,8 @@ import (
 	"os"
 	"slices"
 
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/requestconfig"
-	"github.com/alloy-rest/-companies.social-sdk-go/option"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/requestconfig"
+	"github.com/alloy-rest/companies.social-sdk-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with
@@ -127,9 +127,9 @@ func (r *Client) LookupCompany(ctx context.Context, idValue string, query Lookup
 	opts = slices.Concat(r.Options, opts)
 	if idValue == "" {
 		err = errors.New("missing required idValue parameter")
-		return
+		return nil, err
 	}
 	path := fmt.Sprintf("%v/%s", query.IDType, url.PathEscape(idValue))
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }

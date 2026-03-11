@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/alloy-rest/-companies.social-sdk-go"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal/testutil"
-	"github.com/alloy-rest/-companies.social-sdk-go/option"
+	"github.com/alloy-rest/companies.social-sdk-go"
+	"github.com/alloy-rest/companies.social-sdk-go/internal/testutil"
+	"github.com/alloy-rest/companies.social-sdk-go/option"
 )
 
 func TestWhoamiGet(t *testing.T) {

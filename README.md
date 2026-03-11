@@ -2,7 +2,7 @@
 
 <!-- x-release-please-start-version -->
 
-<a href="https://pkg.go.dev/github.com/alloy-rest/-companies.social-sdk-go"><img src="https://pkg.go.dev/badge/github.com/alloy-rest/-companies.social-sdk-go.svg" alt="Go Reference"></a>
+<a href="https://pkg.go.dev/github.com/alloy-rest/companies.social-sdk-go"><img src="https://pkg.go.dev/badge/github.com/alloy-rest/companies.social-sdk-go.svg" alt="Go Reference"></a>
 
 <!-- x-release-please-end -->
 
@@ -17,7 +17,7 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ```go
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go" // imported as companiessocial
+	"github.com/alloy-rest/companies.social-sdk-go" // imported as companiessocial
 )
 ```
 
@@ -28,7 +28,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/alloy-rest/-companies.social-sdk-go@v0.0.2'
+go get -u 'github.com/alloy-rest/companies.social-sdk-go@v0.1.0'
 ```
 
 <!-- x-release-please-end -->
@@ -48,8 +48,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/alloy-rest/-companies.social-sdk-go"
-	"github.com/alloy-rest/-companies.social-sdk-go/option"
+	"github.com/alloy-rest/companies.social-sdk-go"
+	"github.com/alloy-rest/companies.social-sdk-go/option"
 )
 
 func main() {
@@ -276,7 +276,7 @@ client.Health.Check(context.TODO(), ...,
 
 The request option `option.WithDebugLog(nil)` may be helpful while debugging.
 
-See the [full list of request options](https://pkg.go.dev/github.com/alloy-rest/-companies.social-sdk-go/option).
+See the [full list of request options](https://pkg.go.dev/github.com/alloy-rest/companies.social-sdk-go/option).
 
 ### Pagination
 
@@ -473,7 +473,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/alloy-rest/-companies.social-sdk-go/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/alloy-rest/companies.social-sdk-go/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 

@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alloy-rest/-companies.social-sdk-go"
-	"github.com/alloy-rest/-companies.social-sdk-go/internal"
-	"github.com/alloy-rest/-companies.social-sdk-go/option"
+	"github.com/alloy-rest/companies.social-sdk-go"
+	"github.com/alloy-rest/companies.social-sdk-go/internal"
+	"github.com/alloy-rest/companies.social-sdk-go/option"
 )
 
 type closureTransport struct {
@@ -38,7 +38,7 @@ func TestUserAgentHeader(t *testing.T) {
 			},
 		}),
 	)
-	client.Health.Check(context.Background())
+	_, _ = client.Health.Check(context.Background())
 	if userAgent != fmt.Sprintf("CompaniesSocial/Go %s", internal.PackageVersion) {
 		t.Errorf("Expected User-Agent to be correct, but got: %#v", userAgent)
 	}

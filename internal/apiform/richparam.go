@@ -1,7 +1,7 @@
 package apiform
 
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/param"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/param"
 	"mime/multipart"
 	"reflect"
 )

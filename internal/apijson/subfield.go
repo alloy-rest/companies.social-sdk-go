@@ -1,7 +1,7 @@
 package apijson
 
 import (
-	"github.com/alloy-rest/-companies.social-sdk-go/packages/respjson"
+	"github.com/alloy-rest/companies.social-sdk-go/packages/respjson"
 	"reflect"
 )
 
