@@ -127,9 +127,9 @@ func (r *Client) LookupCompany(ctx context.Context, idValue string, query Lookup
 	opts = slices.Concat(r.Options, opts)
 	if idValue == "" {
 		err = errors.New("missing required idValue parameter")
-		return
+		return nil, err
 	}
 	path := fmt.Sprintf("%v/%s", query.IDType, url.PathEscape(idValue))
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
